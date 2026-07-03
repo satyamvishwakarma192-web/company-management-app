@@ -1,0 +1,192 @@
+{
+  "users": [
+    {
+      "id": "efa991be-bc5c-49a0-847a-5e707cde275d",
+      "tenantId": "default",
+      "name": "Satyam Owner",
+      "email": "owner@company.com",
+      "passwordHash": "$2a$10$Ez7cuAWQ7soKrnHpm5opcu4sGr0yjFg0iXQRDd5gbmtZV9KUA2Gxa",
+      "role": "owner",
+      "department": "Executive",
+      "createdAt": "2026-07-03T11:46:40.204Z"
+    },
+    {
+      "id": "573957f6-80a6-4640-8d54-91310285c29a",
+      "tenantId": "default",
+      "name": "Priya Manager",
+      "email": "manager@company.com",
+      "passwordHash": "$2a$10$Ez7cuAWQ7soKrnHpm5opcu4sGr0yjFg0iXQRDd5gbmtZV9KUA2Gxa",
+      "role": "manager",
+      "department": "Engineering",
+      "createdAt": "2026-07-03T11:46:40.204Z"
+    },
+    {
+      "id": "9b4f33fe-0570-4001-9a96-0efbebb2f437",
+      "tenantId": "default",
+      "name": "Rahul Dev",
+      "email": "rahul@company.com",
+      "passwordHash": "$2a$10$Ez7cuAWQ7soKrnHpm5opcu4sGr0yjFg0iXQRDd5gbmtZV9KUA2Gxa",
+      "role": "employee",
+      "department": "Engineering",
+      "createdAt": "2026-07-03T11:46:40.204Z"
+    }
+  ],
+  "employees": [
+    {
+      "id": "6bc4ae24-1a81-4536-ba3a-d583ce0128e5",
+      "tenantId": "default",
+      "userId": "efa991be-bc5c-49a0-847a-5e707cde275d",
+      "name": "Satyam Owner",
+      "email": "owner@company.com",
+      "role": "owner",
+      "department": "Executive",
+      "skills": [
+        "leadership",
+        "strategy"
+      ],
+      "grade": "C-level",
+      "managerId": null,
+      "status": "active",
+      "joiningDate": "2023-01-01",
+      "createdAt": "2026-07-03T11:46:40.205Z"
+    },
+    {
+      "id": "54c760a2-7435-4cac-9fdb-e0eeef090110",
+      "tenantId": "default",
+      "userId": "573957f6-80a6-4640-8d54-91310285c29a",
+      "name": "Priya Manager",
+      "email": "manager@company.com",
+      "role": "manager",
+      "department": "Engineering",
+      "skills": [
+        "project-management",
+        "javascript"
+      ],
+      "grade": "Senior",
+      "managerId": "6bc4ae24-1a81-4536-ba3a-d583ce0128e5",
+      "status": "active",
+      "joiningDate": "2023-06-01",
+      "createdAt": "2026-07-03T11:46:40.205Z"
+    },
+    {
+      "id": "568fca15-3d0e-488f-b1d8-33ca98e80fce",
+      "tenantId": "default",
+      "userId": "9b4f33fe-0570-4001-9a96-0efbebb2f437",
+      "name": "Rahul Dev",
+      "email": "rahul@company.com",
+      "role": "employee",
+      "department": "Engineering",
+      "skills": [
+        "react",
+        "node",
+        "sql"
+      ],
+      "grade": "Junior",
+      "managerId": "54c760a2-7435-4cac-9fdb-e0eeef090110",
+      "status": "active",
+      "joiningDate": "2024-02-15",
+      "createdAt": "2026-07-03T11:46:40.205Z"
+    }
+  ],
+  "departments": [],
+  "projects": [
+    {
+      "id": "6e1e3c87-3510-4bb1-b2c4-b2c63d944465",
+      "tenantId": "default",
+      "name": "Company Management App MVP",
+      "description": "Build and launch the internal MVP",
+      "department": "Engineering",
+      "managerId": "54c760a2-7435-4cac-9fdb-e0eeef090110",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-15",
+      "budget": 500000,
+      "actualCost": 120000,
+      "status": "in_progress",
+      "createdBy": "efa991be-bc5c-49a0-847a-5e707cde275d",
+      "createdAt": "2026-07-03T11:46:40.206Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "ec63116c-f394-46ee-be72-36001a7b179c",
+      "tenantId": "default",
+      "projectId": "6e1e3c87-3510-4bb1-b2c4-b2c63d944465",
+      "title": "Design database schema",
+      "description": "Finalize ERD for employees, tasks, projects",
+      "assignees": [
+        "568fca15-3d0e-488f-b1d8-33ca98e80fce"
+      ],
+      "priority": "high",
+      "status": "done",
+      "dueDate": "2026-07-10",
+      "estimateHours": 8,
+      "actualHours": 6,
+      "createdBy": "573957f6-80a6-4640-8d54-91310285c29a",
+      "createdAt": "2026-07-03T11:46:40.206Z"
+    },
+    {
+      "id": "ac82ba69-2ebd-49d4-8162-11fcdb147d06",
+      "tenantId": "default",
+      "projectId": "6e1e3c87-3510-4bb1-b2c4-b2c63d944465",
+      "title": "Build authentication API",
+      "description": "JWT auth, roles, register/login",
+      "assignees": [
+        "568fca15-3d0e-488f-b1d8-33ca98e80fce"
+      ],
+      "priority": "high",
+      "status": "in_progress",
+      "dueDate": "2026-07-20",
+      "estimateHours": 12,
+      "actualHours": 5,
+      "createdBy": "573957f6-80a6-4640-8d54-91310285c29a",
+      "createdAt": "2026-07-03T11:46:40.206Z"
+    },
+    {
+      "id": "14a38741-72fb-451a-9c96-baf732946705",
+      "tenantId": "default",
+      "projectId": "6e1e3c87-3510-4bb1-b2c4-b2c63d944465",
+      "title": "Design dashboard UI",
+      "description": "Owner dashboard wireframes and React components",
+      "assignees": [
+        "54c760a2-7435-4cac-9fdb-e0eeef090110"
+      ],
+      "priority": "medium",
+      "status": "todo",
+      "dueDate": "2026-07-25",
+      "estimateHours": 10,
+      "actualHours": 0,
+      "createdBy": "573957f6-80a6-4640-8d54-91310285c29a",
+      "createdAt": "2026-07-03T11:46:40.206Z"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "45ba1e4e-b4ff-4f94-bb71-72255c141cf1",
+      "employeeId": "568fca15-3d0e-488f-b1d8-33ca98e80fce",
+      "date": "2026-07-03",
+      "checkIn": "2026-07-03T11:46:40.207Z",
+      "checkOut": null,
+      "status": "present",
+      "leaveType": null
+    }
+  ],
+  "notifications": [],
+  "auditLogs": [],
+  "company": [
+    {
+      "id": "default",
+      "name": "Acme India Pvt Ltd",
+      "logoUrl": null,
+      "locations": [
+        "Mumbai, India"
+      ],
+      "history": [
+        {
+          "title": "Company founded",
+          "date": "2023-01-01",
+          "description": "Started operations in Mumbai"
+        }
+      ]
+    }
+  ]
+}
